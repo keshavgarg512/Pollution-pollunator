@@ -1,22 +1,18 @@
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and font settings */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif; /* Sets a clean and readable font */
+    line-height: 1.6; /* Increases readability with proper line spacing */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    color: #333; /* Sets a default text color */
+    background-color: #f4f4f4; /* Light background color for contrast */
 }
 
-/* Container for centralized layout */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 90%; /* Sets a max width for content */
+    max-width: 1200px; /* Ensures content doesn’t stretch too wide */
+    margin: auto; /* Centers the container */
+    padding: 0 20px; /* Adds padding on the sides */
 }
 
 /* Header styles */
@@ -33,121 +29,113 @@ header {
 }
 
 header h1 {
-    font-size: 1.8em;
-    margin-bottom: 0.5em;
+    margin: 0; /* Removes default margin */
+    font-size: 2.5em; /* Sets larger font size for the main header */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5em;
+nav {
+    margin-top: 15px; /* Adds space between the header and navigation */
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s;
+nav ul.header-nav {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
 }
 
-header nav ul li a:hover {
-    color: #ffeb3b; /* Light yellow for hover effect */
+nav ul.header-nav li {
+    display: inline-block; /* Displays list items inline-block */
+    margin: 0 15px; /* Adds horizontal margin between items */
 }
 
-/* Hero Section styles */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url('pollinators-hero.jpg') center/cover no-repeat; /* Add your image here */
-    color: white;
-    text-align: center;
-    padding-top: 3.5em; /* Offset for fixed header */
+nav ul.header-nav a {
+    /* color: white; Sets link color */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the link text bold */
+    transition: color 0.3s; /* Adds a transition effect for hover state */
 }
 
-.hero-content {
-    max-width: 700px;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
-    padding: 2em;
-    border-radius: 10px;
+nav ul.header-nav a:hover {
+    color: #ffeb3b; /* Changes link color on hover */
+    text-decoration: underline; /* Underlines links on hover for emphasis */
 }
 
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+/* Section Styles */
+section {
+    padding: 40px 0; /* Adds top and bottom padding for sections */
+    text-align: center; /* Centers text in sections */
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    line-height: 1.5;
+h2 {
+    font-size: 2.5em; /* Sets size for section headers */
+    color: #4caf50; /* Green color for headers */
+    margin-bottom: 20px; /* Space below the header */
 }
 
-.cta-button {
-    background-color: #ffeb3b; /* Bright yellow for CTA button */
-    color: #333;
-    padding: 0.8em 1.5em;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    text-decoration: none;
-    transition: background-color 0.3s;
+p {
+    max-width: 800px; /* Limits paragraph width for readability */
+    margin: 0 auto 20px; /* Centers paragraphs and adds bottom margin */
+    font-size: 1.2em; /* Increases font size for better readability */
 }
 
-.cta-button:hover {
-    background-color: #ffc107; /* Darker yellow on hover */
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    margin: 0 auto; /* Centers the list */
+    max-width: 600px; /* Sets max width for the list */
 }
 
-/* Footer styles */
+ul li {
+    /* background: #e7f4e4; Light green background for list items */
+    padding: 10px; /* Adds padding inside list items */
+    margin: 10px 0; /* Adds margin above and below */
+    border-radius: 5px; /* Rounds the corners of list items */
+}
+
+/* Call to Action Styles */
+.call-to-action {
+    background: #ffffff; /* White background for contrast */
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Adds padding inside the section */
+}
+
+/* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 2em;
+    background: #4caf50; /* Green background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Centers text in footer */
+    padding: 20px 0; /* Adds padding above and below */
+    position: relative; /* Allows positioning of footer */
+    bottom: 0; /* Positions footer at the bottom */
+    width: 100%; /* Full width for footer */
 }
 
 footer p {
-    font-size: 0.9em;
+    margin: 5px 0; /* Adds margin between footer paragraphs */
 }
 
-/* Media Queries for responsiveness */
+/* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.5em;
-    }
-    
-    header nav ul {
-        flex-direction: column;
-        gap: 0.5em;
+        font-size: 2em; /* Smaller font size for mobile */
     }
 
-    .hero h2 {
-        font-size: 2em;
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 10px 0; /* Margin above and below for spacing */
     }
 
-    .hero p {
-        font-size: 1em;
+    section {
+        padding: 20px 0; /* Reduces padding for smaller screens */
     }
 
-    .cta-button {
-        padding: 0.6em 1.2em;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
+    h2 {
+        font-size: 2em; /* Smaller section header for mobile */
     }
 
-    .hero h2 {
-        font-size: 1.6em;
-    }
-
-    .hero p {
-        font-size: 0.9em;
+    p {
+        font-size: 1em; /* Adjust paragraph font size for mobile */
     }
 }
