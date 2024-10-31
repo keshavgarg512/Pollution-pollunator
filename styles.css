@@ -19,41 +19,33 @@ body {
 header {
     background: #4caf50; /* Green background for the header */
     color: white; /* White text color */
-    padding: 20px 0; /* Adds vertical padding to the header */
+    padding: 20px 0; /* Adds padding above and below */
     text-align: center; /* Centers text in the header */
 }
 
 header h1 {
     margin: 0; /* Removes default margin */
-    font-size: 2.5em; /* Sets larger font size for the main header */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
-}
-
-nav {
-    margin-top: 15px; /* Adds space between the header and navigation */
+    font-size: 2.5em; /* Increases header font size */
 }
 
 nav ul {
-    list-style: none; /* Removes bullet points from the list */
+    list-style: none; /* Removes bullet points from list */
     padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
 }
 
 nav ul li {
-    display: inline-block; /* Displays list items inline-block */
-    margin: 0 15px; /* Adds horizontal margin between items */
+    display: inline; /* Displays list items inline */
+    margin: 0 15px; /* Adds margin between items */
 }
 
 nav a {
     color: white; /* Sets link color */
     text-decoration: none; /* Removes underline from links */
     font-weight: bold; /* Makes the link text bold */
-    transition: color 0.3s; /* Adds a transition effect for hover state */
 }
 
 nav a:hover {
-    color: #ffeb3b; /* Changes link color on hover */
-    text-decoration: underline; /* Underlines links on hover for emphasis */
+    text-decoration: underline; /* Underlines links on hover */
 }
 
 /* Section Styles */
@@ -102,6 +94,9 @@ footer {
     color: white; /* White text color */
     text-align: center; /* Centers text in footer */
     padding: 20px 0; /* Adds padding above and below */
+    position: relative; /* Allows positioning of footer */
+    bottom: 0; /* Positions footer at the bottom */
+    width: 100%; /* Full width for footer */
 }
 
 footer p {
@@ -115,7 +110,7 @@ footer p {
     }
 
     nav ul li {
-        display: block; /* Stacks navigation items vertically */
+        display: block; /* Stack navigation items vertically */
         margin: 10px 0; /* Margin above and below for spacing */
     }
 
