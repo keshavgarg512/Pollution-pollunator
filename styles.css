@@ -15,17 +15,12 @@ body {
     padding: 0 20px; /* Adds padding on the sides */
 }
 
-/* Header styles */
+/* Header Styles */
 header {
-    background-color: #4caf50; /* Green theme for nature */
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #4caf50; /* Green background for the header */
+    color: white; /* White text color */
+    padding: 20px 0; /* Adds vertical padding to the header */
+    text-align: center; /* Centers text in the header */
 }
 
 header h1 {
@@ -38,25 +33,25 @@ nav {
     margin-top: 15px; /* Adds space between the header and navigation */
 }
 
-nav ul.header-nav {
+nav ul {
     list-style: none; /* Removes bullet points from the list */
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
 }
 
-nav ul.header-nav li {
+nav ul li {
     display: inline-block; /* Displays list items inline-block */
     margin: 0 15px; /* Adds horizontal margin between items */
 }
 
-nav ul.header-nav a {
-    /* color: white; Sets link color */
+nav a {
+    color: white; /* Sets link color */
     text-decoration: none; /* Removes underline from links */
     font-weight: bold; /* Makes the link text bold */
     transition: color 0.3s; /* Adds a transition effect for hover state */
 }
 
-nav ul.header-nav a:hover {
+nav a:hover {
     color: #ffeb3b; /* Changes link color on hover */
     text-decoration: underline; /* Underlines links on hover for emphasis */
 }
@@ -87,7 +82,7 @@ ul {
 }
 
 ul li {
-    /* background: #e7f4e4; Light green background for list items */
+    background: #e7f4e4; /* Light green background for list items */
     padding: 10px; /* Adds padding inside list items */
     margin: 10px 0; /* Adds margin above and below */
     border-radius: 5px; /* Rounds the corners of list items */
@@ -107,9 +102,6 @@ footer {
     color: white; /* White text color */
     text-align: center; /* Centers text in footer */
     padding: 20px 0; /* Adds padding above and below */
-    position: relative; /* Allows positioning of footer */
-    bottom: 0; /* Positions footer at the bottom */
-    width: 100%; /* Full width for footer */
 }
 
 footer p {
@@ -123,7 +115,7 @@ footer p {
     }
 
     nav ul li {
-        display: block; /* Stack navigation items vertically */
+        display: block; /* Stacks navigation items vertically */
         margin: 10px 0; /* Margin above and below for spacing */
     }
 
