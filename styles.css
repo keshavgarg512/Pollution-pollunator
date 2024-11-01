@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-    width: 90%; /* Sets a max width for content */
-    max-width: 1200px; /* Ensures content doesn’t stretch too wide */
+    width: 100%; /* Sets a max width for content */
+    max-width: 1600px; /* Ensures content doesn’t stretch too wide */
     margin: auto; /* Centers the container */
     padding: 0 20px; /* Adds padding on the sides */
 }
@@ -35,7 +35,7 @@ nav ul {
 
 nav ul li {
     display: inline; /* Displays list items inline */
-    margin: 0 15px; /* Adds margin between items */
+    margin: 0 5px; /* Adds margin between items */
 }
 
 nav a {
@@ -70,15 +70,15 @@ ul {
     list-style-type: none; /* Removes bullet points */
     padding: 0; /* Removes padding */
     margin: 0 auto; /* Centers the list */
-    max-width: 600px; /* Sets max width for the list */
+    max-width: 800px; /* Sets max width for the list */
 }
 
-ul li {
-    background: #e7f4e4; /* Light green background for list items */
-    padding: 10px; /* Adds padding inside list items */
-    margin: 10px 0; /* Adds margin above and below */
-    border-radius: 5px; /* Rounds the corners of list items */
-}
+/* ul li {
+    /* background: #e7f4e4; Light green background for list items */
+    /* padding: 10px; /* Adds padding inside list items */
+    /* margin: 10px 0; Adds margin above and below */
+    /* border-radius: 5px; Rounds the corners of list items */
+/* } */ */
 
 /* Call to Action Styles */
 .call-to-action {
